@@ -7,14 +7,20 @@ And converted by the lucene upgrader tool https://github.com/hakanai/luceneupgra
 
 # download data
 
-- [ngrams-en-20240830.zip](https://f004.backblazeb2.com/file/miurahr-languagetool-ngram-8/ngrams-en-20240830.zip)
+Please run shell script to download ngrams for English and Germany.
+
+```console
+bin/download.sh
+```
 
 
-# How to use Lucene upgrader
+# Convert languagetool's ngram by Lucene upgrader
+
+You can upgrade by yourself.
 
 ```console
 bin/luceneupgrader help
 bin/luceneupgrader info data/en/1gram/
-bin/luceneupgrader upgrade data/en/1gram/ 6
+bin/luceneupgrader upgrade data/en/1gram/ 8
 ```
 
